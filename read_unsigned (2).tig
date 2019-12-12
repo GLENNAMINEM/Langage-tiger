@@ -1,0 +1,47 @@
+let	
+	  
+function read_unsigned() : int =
+
+	let
+
+	var lol : string := getchar()
+	var lol2 := getchar()
+ 	var lol22 := getchar()
+	
+	function strino( so : string ): string = if so = "\n" then   " "
+	else  getchar()
+
+
+	var lol222 := strino( lol22 )
+
+	var lol3 := concat(lol,lol2)
+	var lol33 := concat(lol3,lol22)
+	var lol333 := concat(lol33,lol222) 
+	var stdin : int := ord(lol)
+        var len := size(lol3)
+
+	var a : int :=   ord(substring(lol3,1, 1)) -48 +   (ord(substring(lol3, 0, 1)) - 48  )* 10
+
+	var b :=ord(substring(lol3,1, 1)) -48
+
+	function stri( p : string, a :int ): int = if p = "-" then  -b
+	else a
+
+	var a1 : int :=  (ord(substring(lol333,3, 1)) -48)+(ord(substring(lol333,2, 1)) -48)*10+(ord(substring(lol333, 0, 1)) - 48  )* 10*10*10+(ord(substring(lol333,1, 1)) -48)*10*10
+
+
+	in
+
+
+			 if stdin < 48 & stdin > 57 then -1
+			 else if lol22 = "\n" then  stri(lol,a )
+			 else  stri(lol,a1 )	
+	     		
+         end 
+
+  var a : int := read_unsigned()
+
+in
+  print_int(a*2);
+  print("\n")
+end
